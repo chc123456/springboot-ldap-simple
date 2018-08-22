@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: test
+  devtools:
+      restart:
+        enabled: false
+      livereload:
+        enabled: false # we use gulp + BrowserSync for livereload
+  jackson:
+    serialization.indent_output: true
+  ldap:
+    embedded:
+      base-dn:  dc=example,dc=com
+#      ldif: schema.ldif
+server:
+  port: 9004
